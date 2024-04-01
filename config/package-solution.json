@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-with-jest-client-side-solution",
+    "id": "9994cab7-886e-4763-a835-6c357a85d284",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "spfx-with-jest description"
+      },
+      "longDescription": {
+        "default": "spfx-with-jest description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "spfx-with-jest Feature",
+        "description": "The feature that activates elements of the spfx-with-jest solution.",
+        "id": "0ca33e26-bc33-4225-bd8e-b0d4c3e7d541",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-with-jest.sppkg"
+  }
+}
