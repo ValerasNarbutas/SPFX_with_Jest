@@ -1,3 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="0" failures="0" errors="0" time="4.072">
+<testsuites name="jest tests" tests="5" failures="1" errors="0" time="5.574">
+  <testsuite name="SampleWithJest" errors="0" failures="1" skipped="0" timestamp="2024-04-01T11:07:28" time="4.415" tests="5">
+    <testcase classname="SampleWithJest renders without crashing" name="SampleWithJest renders without crashing" time="0.288">
+    </testcase>
+    <testcase classname="SampleWithJest renders the correct welcome message" name="SampleWithJest renders the correct welcome message" time="0.008">
+    </testcase>
+    <testcase classname="SampleWithJest renders the correct environment message" name="SampleWithJest renders the correct environment message" time="0.005">
+    </testcase>
+    <testcase classname="SampleWithJest renders the correct web part property value" name="SampleWithJest renders the correct web part property value" time="0.011">
+      <failure>TestingLibraryElementError: Unable to find an element with the text: Web part property value: Test Description. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;section
+      class=&quot;undefined undefined&quot;
+    &gt;
+      &lt;div&gt;
+        &lt;img
+          alt=&quot;&quot;
+          src=&quot;test-file-stub&quot;
+        /&gt;
+        &lt;h2&gt;
+          Well done, 
+          Test User
+          !
+        &lt;/h2&gt;
+        &lt;div&gt;
+          Test Environment Message
+        &lt;/div&gt;
+        &lt;div&gt;
+          Web part property value: 
+          &lt;strong&gt;
+            Test Description
+          &lt;/strong&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;h3&gt;
+          Welcome to SharePoint Framework!
+        &lt;/h3&gt;
+        &lt;p&gt;
+          The SharePoint Framework (SPFx) is a extensibility model for Microsoft Viva, Microsoft Teams and SharePoint. It&apos;s the easiest way to extend Microsoft 365 with automatic Single Sign On, automatic hosting and industry standard tooling.
+        &lt;/p&gt;
+        &lt;h4&gt;
+          Learn more about SPFx development:
+        &lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;a
+              href=&quot;https://aka.ms/spfx&quot;
+              rel=&quot;noreferrer&quot;
+              target=&quot;_blank&quot;
+            &gt;
+              SharePoint Framework Overview
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a
+              href=&quot;https://aka.ms/spfx-yeoman-graph&quot;
+              rel=&quot;noreferrer&quot;
+              target=&quot;_blank&quot;
+            &gt;
+              Use Microsoft Graph in your solution
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a
+              href=&quot;https://aka.ms/spfx-yeoman-teams&quot;
+              rel=&quot;noreferrer&quot;
+              target=&quot;_blank&quot;
+            &gt;
+              Build for Microsoft Teams using SharePoint Framework
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a
+              href=&quot;https://aka.ms/spfx-yeoman-viva&quot;
+              rel=&quot;noreferrer&quot;
+              target=&quot;_blank&quot;
+            &gt;
+              Build for Microsoft Viva Connections using SharePoint Framework
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a
+              href=&quot;https://aka.ms/spfx-yeoman-store&quot;
+              rel=&quot;noreferrer&quot;
+              target=&quot;_blank&quot;
+            &gt;
+              Publish SharePoint Framework applications to the marketplace
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a
+              href=&quot;https://aka.ms/spfx-yeoman-api&quot;
+              rel=&quot;noreferrer&quot;
+              target=&quot;_blank&quot;
+            &gt;
+              SharePoint Framework API reference
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a
+              href=&quot;https://aka.ms/m365pnp&quot;
+              rel=&quot;noreferrer&quot;
+              target=&quot;_blank&quot;
+            &gt;
+              Microsoft 365 Developer Community
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (C:\Data\GitProfile\SPFX_with_Jest\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at C:\Data\GitProfile\SPFX_with_Jest\node_modules\@testing-library\dom\dist\query-helpers.js:90:38
+    at C:\Data\GitProfile\SPFX_with_Jest\node_modules\@testing-library\dom\dist\query-helpers.js:62:17
+    at C:\Data\GitProfile\SPFX_with_Jest\node_modules\@testing-library\dom\dist\query-helpers.js:111:19
+    at Object.&lt;anonymous&gt; (C:\Data\GitProfile\SPFX_with_Jest\src\webparts\sampleWithJest\jest\SampleWithJest.test.tsx:34:19)
+    at Promise.then.completed (C:\Data\GitProfile\SPFX_with_Jest\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Data\GitProfile\SPFX_with_Jest\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Data\GitProfile\SPFX_with_Jest\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Data\GitProfile\SPFX_with_Jest\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Data\GitProfile\SPFX_with_Jest\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (C:\Data\GitProfile\SPFX_with_Jest\node_modules\jest-circus\build\run.js:121:9)
+    at run (C:\Data\GitProfile\SPFX_with_Jest\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Data\GitProfile\SPFX_with_Jest\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Data\GitProfile\SPFX_with_Jest\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Data\GitProfile\SPFX_with_Jest\node_modules\jest\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Data\GitProfile\SPFX_with_Jest\node_modules\jest\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="SampleWithJest renders the correct number of links" name="SampleWithJest renders the correct number of links" time="0.081">
+    </testcase>
+  </testsuite>
 </testsuites>

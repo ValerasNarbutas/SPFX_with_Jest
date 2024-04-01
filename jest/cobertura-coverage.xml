@@ -1,9 +1,53 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="0" lines-covered="0" line-rate="NaN" branches-valid="0" branches-covered="0" branch-rate="NaN" timestamp="1711967594877" complexity="0" version="0.1">
+<coverage lines-valid="14" lines-covered="14" line-rate="1" branches-valid="4" branches-covered="2" branch-rate="0.5" timestamp="1711969653280" complexity="0" version="0.1">
   <sources>
     <source>C:\Data\GitProfile\SPFX_with_Jest</source>
   </sources>
   <packages>
+    <package name="jest" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="fileMock.js" filename="jest\fileMock.js" line-rate="1" branch-rate="1">
+          <methods>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.webparts.sampleWithJest.components" line-rate="1" branch-rate="0.5">
+      <classes>
+        <class name="SampleWithJest.tsx" filename="src\webparts\sampleWithJest\components\SampleWithJest.tsx" line-rate="1" branch-rate="0.5">
+          <methods>
+            <method name="(anonymous_6)" hits="6" signature="()V">
+              <lines>
+                <line number="6" hits="6"/>
+              </lines>
+            </method>
+            <method name="(anonymous_8)" hits="5" signature="()V">
+              <lines>
+                <line number="7" hits="5"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false"/>
+            <line number="2" hits="1" branch="false"/>
+            <line number="4" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="7" hits="1" branch="false"/>
+            <line number="9" hits="5" branch="false"/>
+            <line number="10" hits="5" branch="false"/>
+            <line number="11" hits="5" branch="false"/>
+            <line number="12" hits="5" branch="false"/>
+            <line number="13" hits="5" branch="false"/>
+            <line number="14" hits="5" branch="false"/>
+            <line number="16" hits="5" branch="false"/>
+            <line number="43" hits="1" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
   </packages>
 </coverage>

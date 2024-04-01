@@ -1,41 +1,40 @@
 import * as React from 'react';
-import { shallow, ShallowWrapper } from 'enzyme';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import SampleWithJest from '../components/SampleWithJest';
+import { ISampleWithJestProps } from '../components/ISampleWithJestProps';
+
 
 describe('SampleWithJest', () => {
-  let wrapper: ShallowWrapper;
-
+  
   beforeEach(() => {
-    wrapper = shallow(<SampleWithJest
-      description="Test Description"
-      isDarkTheme={false}
-      environmentMessage="Test Environment Message"
-      hasTeamsContext={true}
-      userDisplayName="Test User"
-    />);
+    const props: ISampleWithJestProps = {
+      description: "Test Description",
+      isDarkTheme: false,
+      environmentMessage: "Test Environment Message",
+      hasTeamsContext: true,
+      userDisplayName: "Test User",
+    };
+    render(<SampleWithJest {...props} /> as React.ReactElement<ISampleWithJestProps>);
   });
 
   it('renders without crashing', () => {
-    expect(wrapper.exists()).toBe(true);
+    expect(screen.getByText('Well done, Test User!')).toBeInTheDocument();
   });
 
   it('renders the correct welcome message', () => {
-    const welcomeMessage = wrapper.find('h2').text();
-    expect(welcomeMessage).toBe('Well done, Test User!');
+    expect(screen.getByText('Well done, Test User!')).toBeInTheDocument();
   });
 
   it('renders the correct environment message', () => {
-    const environmentMessage = wrapper.find('.welcome > div').at(0).text();
-    expect(environmentMessage).toBe('Test Environment Message');
+    expect(screen.getByText('Test Environment Message')).toBeInTheDocument();
   });
 
   it('renders the correct web part property value', () => {
-    const webPartPropertyValue = wrapper.find('.welcome > div').at(1).text();
-    expect(webPartPropertyValue).toBe('Web part property value: Test Description');
+    expect(screen.getByText('Web part property value: Test Description')).toBeInTheDocument();
   });
 
   it('renders the correct number of links', () => {
-    const links = wrapper.find('.links > li');
-    expect(links.length).toBe(7);
+    expect(screen.getAllByRole('link').length).toBe(7);
   });
 });
